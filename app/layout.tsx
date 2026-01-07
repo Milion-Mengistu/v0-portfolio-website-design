@@ -14,21 +14,8 @@ export const metadata: Metadata = {
     "Full-stack developer from Ethiopia. Building seamless experiences with React, Node.js, and TypeScript. Check out my portfolio and projects.",
   generator: "v0.app",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
   },
 }
 
