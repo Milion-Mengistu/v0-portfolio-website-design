@@ -92,7 +92,11 @@ export default function About() {
               <div className="pl-4 space-y-2">
                 <div>
                   <span className="text-primary">name:</span>
-                  <span className="text-accent"> "Alex Rivera",</span>
+                  <span className="text-accent"> "Milion Mengistu",</span>
+                </div>
+                <div>
+                  <span className="text-primary">location:</span>
+                  <span className="text-accent"> "Ethiopia",</span>
                 </div>
                 <div>
                   <span className="text-primary">role:</span>

@@ -8,9 +8,9 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Alex Rivera | Full-Stack Developer",
+  title: "Milion Mengistu | Full-Stack Developer",
   description:
-    "Building seamless experiences from server to screen. Full-stack developer portfolio showcasing projects, skills, and experience.",
+    "Full-stack developer from Ethiopia. Building seamless experiences with React, Node.js, and TypeScript. Check out my portfolio and projects.",
   generator: "v0.app",
   icons: {
     icon: [

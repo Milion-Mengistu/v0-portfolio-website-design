@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
 
 const navItems = [
   { label: "About", href: "#about" },
@@ -48,12 +49,23 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
         {/* Logo with subtle animation */}
-        <a
-          href="#"
-          className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hover:opacity-80 transition-opacity duration-300"
-        >
-          AR
-        </a>
+        <div className="flex items-center gap-3">
+          <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-gradient-to-r from-primary to-accent p-0.5 bg-gradient-to-r from-primary to-accent">
+            <Image
+              src="/professional-profile-photo.jpg"
+              alt="Milion Mengistu"
+              width={40}
+              height={40}
+              className="rounded-full w-full h-full object-cover"
+            />
+          </div>
+          <a
+            href="#"
+            className="text-lg font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hover:opacity-80 transition-opacity duration-300"
+          >
+            MM
+          </a>
+        </div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-12 items-center">

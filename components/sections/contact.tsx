@@ -40,10 +40,15 @@ export default function Contact() {
   }
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub", color: "hover:text-foreground" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn", color: "hover:text-blue-500" },
+    { icon: Github, href: "https://github.com/Milion-Mengistu", label: "GitHub", color: "hover:text-foreground" },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/milion-mengistu/",
+      label: "LinkedIn",
+      color: "hover:text-blue-500",
+    },
     { icon: Twitter, href: "https://twitter.com", label: "Twitter", color: "hover:text-sky-400" },
-    { icon: Mail, href: "mailto:alex@example.com", label: "Email", color: "hover:text-accent" },
+    { icon: Mail, href: "mailto:millionmengistu6@gmail.com", label: "Email", color: "hover:text-accent" },
   ]
 
   return (
@@ -71,17 +76,17 @@ export default function Contact() {
               <div className="text-center">
                 <p className="text-sm font-medium text-accent uppercase tracking-widest mb-4">Email</p>
                 <a
-                  href="mailto:alex.rivera@example.com"
+                  href="mailto:millionmengistu6@gmail.com"
                   className="text-2xl font-semibold text-foreground hover:text-accent transition-colors"
                 >
-                  alex.rivera@example.com
+                  millionmengistu6@gmail.com
                 </a>
               </div>
 
               {/* Location */}
               <div className="text-center">
                 <p className="text-sm font-medium text-accent uppercase tracking-widest mb-4">Location</p>
-                <p className="text-lg text-foreground">San Francisco, CA</p>
+                <p className="text-lg text-foreground">Ethiopia</p>
               </div>
 
               {/* Availability */}
@@ -121,10 +126,10 @@ export default function Contact() {
         >
           <p className="text-muted-foreground mb-6">Or if you prefer, reach out directly:</p>
           <a
-            href="mailto:alex.rivera@example.com"
+            href="mailto:millionmengistu6@gmail.com"
             className="inline-block px-8 py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:shadow-lg hover:shadow-accent/30 transition-all duration-200"
           >
-            alex.rivera@example.com
+            millionmengistu6@gmail.com
           </a>
         </div>
       </div>
