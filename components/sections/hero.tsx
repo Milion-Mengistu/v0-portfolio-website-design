@@ -106,7 +106,7 @@ export default function Hero() {
             <div className="relative w-full aspect-square max-w-md">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent/10 to-primary/5 rounded-3xl blur-2xl"></div>
               <Image
-                src="/hero-illustration.jpg"
+                src="/images/generated-20image-20january-2005-2c-202026-20-209-00pm.jpg"
                 alt="Developer illustration"
                 width={500}
                 height={500}

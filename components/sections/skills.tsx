@@ -3,45 +3,9 @@
 import type React from "react"
 
 import { useEffect, useRef, useState } from "react"
-import { Code2, Database, Cloud, Wrench, Zap, GitBranch, Server, Layers } from "lucide-react"
+import { skillCategories, otherTechnologies } from "@/data/skills"
 
-const skillCategories = [
-  {
-    title: "Frontend",
-    color: "from-accent to-blue-500",
-    icon: Code2,
-    skills: [
-      { name: "React / Next.js", icon: Code2 },
-      { name: "TypeScript", icon: Zap },
-      { name: "Tailwind CSS", icon: Layers },
-      { name: "Framer Motion", icon: Wrench },
-    ],
-  },
-  {
-    title: "Backend",
-    color: "from-primary to-purple-600",
-    icon: Server,
-    skills: [
-      { name: "Node.js / Express", icon: Server },
-      { name: "PostgreSQL", icon: Database },
-      { name: "API Design", icon: Zap },
-      { name: "Authentication", icon: Wrench },
-    ],
-  },
-  {
-    title: "DevOps & Tools",
-    color: "from-green-500 to-teal-600",
-    icon: Cloud,
-    skills: [
-      { name: "Docker", icon: Cloud },
-      { name: "Git / GitHub", icon: GitBranch },
-      { name: "AWS", icon: Cloud },
-      { name: "CI/CD Pipelines", icon: Zap },
-    ],
-  },
-]
-
-function SkillIcon({ icon: Icon, delay }: { icon: React.ComponentType<any>; delay: number }) {
+const SkillIcon = ({ icon: Icon, delay }: { icon: React.ComponentType<any>; delay: number }) => {
   return (
     <div
       className="relative w-16 h-16"
@@ -138,18 +102,7 @@ export default function Skills() {
         >
           <h3 className="text-lg font-semibold text-foreground mb-6">Other Technologies</h3>
           <div className="flex flex-wrap gap-3">
-            {[
-              "MongoDB",
-              "GraphQL",
-              "Redis",
-              "Firebase",
-              "Vercel",
-              "Webpack",
-              "Jest",
-              "Playwright",
-              "Python",
-              "Linux",
-            ].map((tech) => (
+            {otherTechnologies.map((tech) => (
               <span
                 key={tech}
                 className="px-4 py-2 bg-muted border border-border rounded-full text-sm text-foreground hover:border-accent hover:bg-muted transition-colors cursor-pointer"

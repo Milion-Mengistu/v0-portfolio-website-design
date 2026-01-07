@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+import { aboutData } from "@/data/about"
 
 export default function About() {
   const ref = useRef<HTMLDivElement>(null)
@@ -41,36 +42,20 @@ export default function About() {
         >
           {/* Left column - bio */}
           <div className="space-y-6">
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a full-stack developer with a passion for building elegant, performant solutions to complex problems.
-              My journey in tech started with curiosity about how things work, which evolved into a career spanning
-              frontend, backend, and everything in between.
-            </p>
-
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Currently, I focus on crafting seamless user experiences while maintaining robust, scalable backend
-              infrastructure. I believe the best software combines intuitive design with solid engineering principles.
-            </p>
-
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              When I'm not coding, you'll find me contributing to open-source projects, writing technical blogs, or
-              exploring new technologies. I'm always eager to collaborate on projects that push technical boundaries.
-            </p>
+            {aboutData.bio.map((paragraph, index) => (
+              <p key={index} className="text-lg text-muted-foreground leading-relaxed">
+                {paragraph}
+              </p>
+            ))}
 
             {/* Quick stats */}
             <div className="grid grid-cols-3 gap-4 pt-4">
-              <div>
-                <p className="text-3xl font-bold text-primary">5+</p>
-                <p className="text-sm text-muted-foreground">Years Experience</p>
-              </div>
-              <div>
-                <p className="text-3xl font-bold text-primary">20+</p>
-                <p className="text-sm text-muted-foreground">Projects Delivered</p>
-              </div>
-              <div>
-                <p className="text-3xl font-bold text-primary">10+</p>
-                <p className="text-sm text-muted-foreground">Technologies</p>
-              </div>
+              {aboutData.stats.map((stat, index) => (
+                <div key={index}>
+                  <p className="text-3xl font-bold text-primary">{stat.value}</p>
+                  <p className="text-sm text-muted-foreground">{stat.label}</p>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -92,23 +77,23 @@ export default function About() {
               <div className="pl-4 space-y-2">
                 <div>
                   <span className="text-primary">name:</span>
-                  <span className="text-accent"> "Milion Mengistu",</span>
+                  <span className="text-accent"> "{aboutData.name}",</span>
                 </div>
                 <div>
                   <span className="text-primary">location:</span>
-                  <span className="text-accent"> "Ethiopia",</span>
+                  <span className="text-accent"> "{aboutData.location}",</span>
                 </div>
                 <div>
                   <span className="text-primary">role:</span>
-                  <span className="text-accent"> "Full-Stack Developer",</span>
+                  <span className="text-accent"> "{aboutData.role}",</span>
                 </div>
                 <div>
                   <span className="text-primary">focus:</span>
-                  <span className="text-accent"> ["React", "Node.js", "TypeScript"],</span>
+                  <span className="text-accent"> {JSON.stringify(aboutData.focus)},</span>
                 </div>
                 <div>
                   <span className="text-primary">passion:</span>
-                  <span className="text-accent"> "Clean Code & Great UX"</span>
+                  <span className="text-accent"> "{aboutData.passion}"</span>
                 </div>
               </div>
 

@@ -52,7 +52,7 @@ export default function Navigation() {
         <div className="flex items-center gap-3">
           <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-gradient-to-r from-primary to-accent p-0.5 bg-gradient-to-r from-primary to-accent">
             <Image
-              src="/professional-profile-photo.jpg"
+              src="/images/generated-20image-20january-2005-2c-202026-20-209-00pm.jpg"
               alt="Milion Mengistu"
               width={40}
               height={40}

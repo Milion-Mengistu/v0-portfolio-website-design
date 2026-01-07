@@ -2,71 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import { ExternalLink, Github } from "lucide-react"
-
-const projects = [
-  {
-    id: 1,
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution with real-time inventory management and payment processing.",
-    category: "full-stack",
-    image: "/modern-ecommerce-dashboard.png",
-    technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    live: "https://example.com",
-    github: "https://github.com",
-  },
-  {
-    id: 2,
-    title: "Real-Time Chat Application",
-    description: "WebSocket-based chat app with user authentication, rooms, and message history.",
-    category: "backend",
-    image: "/chat-application-interface.png",
-    technologies: ["Socket.io", "Express", "MongoDB", "React"],
-    live: "https://example.com",
-    github: "https://github.com",
-  },
-  {
-    id: 3,
-    title: "Task Management Dashboard",
-    description: "Collaborative task management with drag-and-drop, team collaboration, and analytics.",
-    category: "frontend",
-    image: "/task-management-dashboard.png",
-    technologies: ["Next.js", "Tailwind", "TypeScript", "Framer Motion"],
-    live: "https://example.com",
-    github: "https://github.com",
-  },
-  {
-    id: 4,
-    title: "Analytics Engine",
-    description: "Real-time data visualization platform with custom dashboards and report generation.",
-    category: "full-stack",
-    image: "/analytics-dashboard-charts.png",
-    technologies: ["React", "Python", "PostgreSQL", "Redis"],
-    live: "https://example.com",
-    github: "https://github.com",
-  },
-  {
-    id: 5,
-    title: "Developer Portfolio",
-    description: "Modern, responsive portfolio website with smooth animations and dark mode support.",
-    category: "frontend",
-    image: "/portfolio-website-design.png",
-    technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    live: "https://example.com",
-    github: "https://github.com",
-  },
-  {
-    id: 6,
-    title: "API Management System",
-    description: "Centralized API management with authentication, rate limiting, and usage analytics.",
-    category: "backend",
-    image: "/api-gateway-system.jpg",
-    technologies: ["Node.js", "Express", "MongoDB", "JWT"],
-    live: "https://example.com",
-    github: "https://github.com",
-  },
-]
-
-const categories = ["all", "frontend", "backend", "full-stack"]
+import { projects, categories } from "@/data/projects"
 
 export default function Projects() {
   const ref = useRef<HTMLDivElement>(null)
